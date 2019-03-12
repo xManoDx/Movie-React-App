@@ -1,0 +1,89 @@
+@import 'styles/variables.scss'
+
+body
+  margin: 0
+  padding: 0
+
+.home
+  color: $red
+
+
+.movie-container
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+
+.nav-links
+  a
+    padding-right: 20px
+    font-size: 20px
+    font-weight: bold
+    color: black
+    text-decoration: none
+    &:active
+      color: #61dafb
+      text-decoration: none
+    &:focus
+      color: #61dafb
+      text-decoration: none
+
+.active
+  color: #61dafb
+  text-decoration: none
+
+.poster
+  text-align: center
+  margin-bottom: 50px
+  img
+    border-radius: 20px
+
+.movie-details
+  padding: 20px
+  img
+    border-radius: 20px
+
+.movie-details-paddings
+  padding-right: 20px
+  padding-top: 20px
+
+.movie-details-info
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  width: 500px
+
+.movie-details-container
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+.clickable
+  font-size: 20px
+  font-weight: bold
+  cursor: pointer
+
+@media only screen and (max-width: 1530px)
+   .poster
+      img
+        height: 75%
+        width: auto
+
+@media only screen and (max-width: 1190px)
+  .poster
+    img
+      height: 60%
+      width: auto
+
+@media only screen and (max-width: 957px)
+  .poster
+    img
+      height: 75%
+      width: auto
+
+@media only screen and (max-width: 799px)
+  .poster
+    img
+      height: 100%
+      width: auto
+
